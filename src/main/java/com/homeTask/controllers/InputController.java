@@ -6,13 +6,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class InputController {
-    @GetMapping(value = "/")
+    @RequestMapping(value = "/")
     public String showMainPage(){
-        return "main_page.jsp";
+        return "main-page-view";
     }
 
-    @RequestMapping(value = ("total-records"))
+    @RequestMapping(value = "/add-record")
+    public String addRecord(){
+        return "add-record-view";
+    }
+
+    @RequestMapping(value = ("/totalRecords"))
     public String showTotalRecords(){
-        return "total-records.jsp";
+        return "total-records-view";
     }
 }
