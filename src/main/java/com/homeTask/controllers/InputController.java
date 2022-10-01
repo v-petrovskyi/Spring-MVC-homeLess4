@@ -25,7 +25,7 @@ public class InputController {
     public String showTotalRecords(HttpServletRequest request, Model model){
         String record = request.getParameter("someText");
         SomeText someText = new SomeText(record);
-        WriterReader.writeFile(record);
+        WriterReader.writer(record);
         model.addAttribute("count", SomeText.count);
         model.addAttribute("someText", someText.getText());
         return "records-view";
