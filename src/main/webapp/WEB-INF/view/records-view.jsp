@@ -11,10 +11,12 @@
     <title>total records</title>
 </head>
 <body>
-Last record: ${param.someText}
-<h2>Total records</h2>
-
-
+<h1>Data wrote to file successfully</h1>
+<br>
+<h1>Last record: ${someText}</h1>
+<br>
+<h1>Total records ${count}</h1>
+<br>
 <h1>
     <a href="add-record">Add new record</a>
 </h1>

@@ -13,7 +13,7 @@
 <body>
 <h2>Input text</h2>
 <br>
-<form action="totalRecords" method="get">
+<form action="record" method="get">
     <input type="text" name="someText" placeholder="input some text">
     <input type="submit">
 </form>
