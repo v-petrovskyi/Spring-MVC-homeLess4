@@ -4,6 +4,7 @@ import com.homeTask.entity.SomeText;
 import com.homeTask.writerReader.WriterReader;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -21,7 +22,7 @@ public class InputController {
         return "add-record-view";
     }
 
-    @RequestMapping(value = ("/record"))
+    @GetMapping(value = "/record")
     public String showTotalRecords(HttpServletRequest request, Model model){
         String record = request.getParameter("someText");
         SomeText someText = new SomeText(record);
@@ -30,4 +31,11 @@ public class InputController {
         model.addAttribute("someText", someText.getText());
         return "records-view";
     }
+
+    @RequestMapping(value = "/all-records")
+    public String showAllRecords(Model model){
+        model.addAttribute("allRecordsList", WriterReader.readAllFromFile());
+        return "show-all-records-view";
+    }
+
 }

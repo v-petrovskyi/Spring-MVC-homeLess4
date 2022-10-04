@@ -11,6 +11,12 @@
 <h1>
     <a href="add-record">Add new record</a>
 </h1>
+<br>
+<h1>
+    <a href="all-records">Show all records</a>
+</h1>
+
+
 
 </body>
 </html>

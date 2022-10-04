@@ -10,5 +10,11 @@
     <input type="text" name="someText" placeholder="input some text">
     <input type="submit">
 </form>
+
+<br>
+<h1>
+    <a href="all-records">Show all records</a>
+</h1>
+
 </body>
 </html>
