@@ -4,7 +4,7 @@
     <title>Main</title>
 </head>
 <body>
-<h2>Main</h2>
+<h1>Main</h1>
 <br>
 <h1>
     <a href="add-record">Add new record</a>

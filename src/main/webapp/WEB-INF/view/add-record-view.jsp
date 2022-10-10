@@ -4,7 +4,7 @@
     <title>Add record</title>
 </head>
 <body>
-<h2>Input text</h2>
+<h1>Input text</h1>
 <br>
 <form action="record" method="get">
     <input type="text" name="someText" placeholder="input some text">
